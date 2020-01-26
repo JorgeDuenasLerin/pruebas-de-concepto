@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Comida;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ComidaType extends AbstractType
@@ -14,6 +15,7 @@ class ComidaType extends AbstractType
         $builder
             ->add('nombre')
             ->add('categoria')
+            ->add('save', SubmitType::class)
         ;
     }
 
