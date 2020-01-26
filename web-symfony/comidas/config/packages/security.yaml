@@ -19,7 +19,10 @@ security:
             form_login:
                 login_path: login
                 check_path: login
-
+                default_target_path: comida
+            logout:
+                path:   app_logout
+                target: /comida
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
 

@@ -22,7 +22,7 @@ class Comida
     private $nombre;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Categoria", inversedBy="comidas")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Categoria", inversedBy="comidas", fetch="EAGER")
      * @ORM\JoinColumn(nullable=false)
      */
     private $categoria;
